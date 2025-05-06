@@ -1,7 +1,7 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
+    { name: "TechStack", link: "#techStack" },
     { name: "Contact", link: "#contact" },
   ];
   
@@ -106,17 +106,25 @@ export const navItems = [
       id : 5,
       title : "AI Finance Tracker",
       des : "A AI based expense tracker with AI features which gives suggestions on your expense habits",
-      img : "/dashboard.png",
-      iconLists : ["/react.svg","tailwind.svg"],
-      link : ""
+      img : "/ai-finance.png",
+      iconLists : ["/react.svg","tailwind.svg","/postgresql.svg","firebase.png"],
+      link : "https://ai-financial-advisor-alpha.vercel.app/"
     },
     {
       id : 6,
       title : "JobPortal",
       des : "A Job Portal which is fully functional for both admins and seekers",
       img : "/jobportal.png",
-      iconLists : ["/next.svg","/tailwind.svg"],
-      link : ""
+      iconLists : ["/next.svg","/tailwind.svg","mongodb.svg","/nodejs.svg"],
+      link : "https://frontend-three-beta-50.vercel.app/"
+    },
+    {
+      id : 7,
+      title : "AI Interview Preparation",
+      des : "An AI mock interview tool that helps users practice and improve their interview skills.",
+      img : "/aiprep.png",
+      iconLists : ["/next.svg","tailwind.svg","/ts.svg","/vapi.avif"],
+      link : "https://ai-interview-prep-eight.vercel.app/"
     }
   ];
   

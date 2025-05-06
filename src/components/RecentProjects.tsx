@@ -1,12 +1,11 @@
 import React from 'react'
 import { PinContainer } from './ui/Pin'
-import { div } from 'framer-motion/client'
 import { FaLocationArrow } from 'react-icons/fa'
 import { projects } from '@/data'
 
 const RecentProjects = () => {
   return (
-    <div className='py-20'>
+    <div  id="projects" className='py-20'>
         <h1 className='heading'>A small selection of{" "}
             <span className='text-purple-500'>recent projects</span>
         </h1>
@@ -19,10 +18,11 @@ const RecentProjects = () => {
 
                 
             <PinContainer
-            
+            title="visit"
+              href={item.link}
             >
 
-                <div className='relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden  h-[20vh] lg:h-[30vh] mb-10'>
+                <div className='relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10'>
                     <div
                     className='relative w-full h-full overflow-hidden lg:rounded-3xl'
                     style={{backgroundColor : "#13192D"}}
@@ -59,16 +59,16 @@ const RecentProjects = () => {
                                 transform : `translateX(-${5 * index + 2}px)`
                             }}
                             >
-                                <img src={icon} alt="icon5" />
+                                <img src={icon} alt="icon5" className='P-2' />
                             </div>
                         ))}
                     </div>
 
-                    <div>
-                        <p>
+                    <div className='flex justify-center items-center'>
+                        <p className='flex lg:text-xl md:text-xs text-sm text-purple'>
                             Check Live site
                         </p>
-                        <FaLocationArrow/>
+                        <FaLocationArrow className='ms-3' color='#CBACF9'/>
                     </div>
                 </div>
             </PinContainer>

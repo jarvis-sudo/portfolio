@@ -4,14 +4,18 @@ import { companies, testimonials, techStack } from "@/data";
 
 const Clients = () => {
   return (
-    <section>
-      <h1>
+    <section id="techStack" className="py- overflow-hidden">
+    {/*  <h1 className="heading">
         Kind words from
-        <span>satisfied clients</span>
+        <span className="text-purple-600">satisfied clients</span>
       </h1>
-
-      <div>
-        <div>
+*/}
+  <h1 className="heading">
+    <span className="text-purple-600">Tools & Technologies </span>
+     I work with
+  </h1>
+      <div className="flex flex-col items-center mt-10">
+        <div className="rounded-md flex flex-col antialiased items-center relative overflow-hidden">
           <InfiniteMovingCards
             items={techStack}
             direction="left"
@@ -19,7 +23,7 @@ const Clients = () => {
           />
         </div>
 
-          <div>
+       {/* <div>
           {companies.map((company) => (
             <React.Fragment key={company.id}>
               <div>
@@ -37,8 +41,8 @@ const Clients = () => {
               </div>
             </React.Fragment>
           ))}
-        </div>
-        
+        </div> */
+       }
       </div>
     </section>
   );
