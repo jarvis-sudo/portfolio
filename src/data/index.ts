@@ -227,16 +227,19 @@ export const navItems = [
   
   export const socialMedia = [
     {
-      id: 1,
+      id: "github",
       img: "/git.svg",
+      link : "https://github.com/jarvis-sudo"
     },
     {
-      id: 2,
+      id: "twitter",
       img: "/twit.svg",
+      link : ""
     },
     {
-      id: 3,
+      id: "LinkedIn",
       img: "/link.svg",
+      link : "https://www.linkedin.com/in/yudhishtar-yelishala/"
     },
   ];
 
