@@ -1,5 +1,4 @@
 import { socialMedia } from '@/data'
-import { div } from 'framer-motion/client'
 import React from 'react'
 import MagicButton from './MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
